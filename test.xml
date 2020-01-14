@@ -1,0 +1,256 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="1.7.37" exportTime="Tue Jan 14 16:48:58 CST 2020">
+  <item>
+    <time>Tue Jan 14 16:48:11 CST 2020</time>
+    <url><![CDATA[http://hack.mimaz.com/index.php]]></url>
+    <host ip="127.0.0.1">hack.mimaz.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/index.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[POST /index.php HTTP/1.1
+Host: hack.mimaz.com
+Content-Length: 4
+Pragma: no-cache
+Cache-Control: no-cache
+Origin: http://hack.mimaz.com
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://hack.mimaz.com/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: UM_distinctid=16eda49ece26bc-05058130d091b-2393f61-1fa400-16eda49ece38bf; uid=hack5e02cb017a5f09.80581022
+Connection: close
+
+id=1]]></request>
+    <status>200</status>
+    <responselength>232</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.15.11
+Date: Tue, 14 Jan 2020 08:48:11 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Powered-By: PHP/7.3.4
+Content-Length: 42
+
+{"state":"ok","userId":"1","info":"admin"}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Tue Jan 14 16:48:11 CST 2020</time>
+    <url><![CDATA[http://hack.mimaz.com/index.php]]></url>
+    <host ip="127.0.0.1">hack.mimaz.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/index.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[POST /index.php HTTP/1.1
+Host: hack.mimaz.com
+Content-Length: 4
+Pragma: no-cache
+Cache-Control: no-cache
+Origin: http://hack.mimaz.com
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://hack.mimaz.com/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: UM_distinctid=16eda49ece26bc-05058130d091b-2393f61-1fa400-16eda49ece38bf; uid=hack5e02cb017a5f09.80581022
+Connection: close
+
+{"ServerType":"prod","Apptab":"123","Aaaaatab":"113"}]]></request>
+    <status>200</status>
+    <responselength>232</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.15.11
+Date: Tue, 14 Jan 2020 08:48:11 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Powered-By: PHP/7.3.4
+Content-Length: 42
+
+{"state":"ok","userId":"1","info":"admin"}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Tue Jan 14 16:48:20 CST 2020</time>
+    <url><![CDATA[http://hack.mimaz.com/index.php]]></url>
+    <host ip="127.0.0.1">hack.mimaz.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/index.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[POST /index.php HTTP/1.1
+Host: hack.mimaz.com
+Content-Length: 4
+Pragma: no-cache
+Cache-Control: no-cache
+Origin: http://hack.mimaz.com
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://hack.mimaz.com/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: UM_distinctid=16eda49ece26bc-05058130d091b-2393f61-1fa400-16eda49ece38bf; uid=hack5e02cb017a5f09.80581022
+Connection: close
+
+id=2]]></request>
+    <status>200</status>
+    <responselength>228</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.15.11
+Date: Tue, 14 Jan 2020 08:48:20 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Powered-By: PHP/7.3.4
+Content-Length: 38
+
+{"state":"ok","userId":"2","b":"hack"}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Tue Jan 14 16:48:39 CST 2020</time>
+    <url><![CDATA[http://hack.mimaz.com/index.php]]></url>
+    <host ip="127.0.0.1">hack.mimaz.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/index.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[POST /index.php HTTP/1.1
+Host: hack.mimaz.com
+Content-Length: 19
+Pragma: no-cache
+Cache-Control: no-cache
+Origin: http://hack.mimaz.com
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://hack.mimaz.com/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: UM_distinctid=16eda49ece26bc-05058130d091b-2393f61-1fa400-16eda49ece38bf; uid=hack5e02cb017a5f09.80581022
+Connection: close
+
+id=2&asdp=1&qwe=gfd]]></request>
+    <status>200</status>
+    <responselength>228</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.15.11
+Date: Tue, 14 Jan 2020 08:48:39 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Powered-By: PHP/7.3.4
+Content-Length: 38
+
+{"state":"ok","userId":"2","b":"hack"}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Tue Jan 14 16:39:44 CST 2020</time>
+    <url><![CDATA[http://hack.mimaz.com/index.php?id=2&pid=3&hack=qwer]]></url>
+    <host ip="127.0.0.1">hack.mimaz.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/index.php?id=2&pid=3&hack=qwer]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /index.php?id=2&pid=3&hack=qwer HTTP/1.1
+Host: hack.mimaz.com
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: UM_distinctid=16eda49ece26bc-05058130d091b-2393f61-1fa400-16eda49ece38bf; uid=hack5e02cb017a5f09.80581022
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>228</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.15.11
+Date: Tue, 14 Jan 2020 08:39:44 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Powered-By: PHP/7.3.4
+Content-Length: 38
+
+{"state":"ok","userId":"2","b":"hack"}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Tue Jan 14 16:39:59 CST 2020</time>
+    <url><![CDATA[http://hack.mimaz.com/index.php]]></url>
+    <host ip="127.0.0.1">hack.mimaz.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/index.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /index.php HTTP/1.1
+Host: hack.mimaz.com
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: UM_distinctid=16eda49ece26bc-05058130d091b-2393f61-1fa400-16eda49ece38bf; uid=hack5e02cb017a5f09.80581022
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>207</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.15.11
+Date: Tue, 14 Jan 2020 08:39:59 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Powered-By: PHP/7.3.4
+Content-Length: 17
+
+{"state":"error"}]]></response>
+    <comment></comment>
+  </item>
+</items>
