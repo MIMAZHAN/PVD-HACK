@@ -58,7 +58,6 @@ def changePostMethod(data):
         Alljsondata = queryValue(json.loads(data))
         for changejson in Alljsondata:
             rejsondata.append(json.dumps(changejson))
-        print(rejsondata)
         return rejsondata
     elif '=' in data:
         data = bp.parse_qs(data)
