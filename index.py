@@ -24,6 +24,7 @@ def userinput():
     return args
 
 def Getcheck(date,word):
+    printmsg('GetHacking...')
     for item in date:
         if len(item[1]) > 0:
             for url in item[1]:
@@ -33,20 +34,23 @@ def Getcheck(date,word):
                     printmsg('Congratulations! url : {} Loopholes (no headers)'.format(url))
 
 def Postcheck(date,word):
+    printmsg('PostHacking...')
     for item in date:
-        if len(item[1]) > 0:
-            for date in item[1]:
-                if PostReq(item[0],date,word,header=item[2]):
-                    printmsg('Congratulations! url : {} Loopholes (yes headers)'.format(item[0]))
-                    printmsg('request date: {}'.format(date))
-                if PostReq(item[0],date,word):
-                    printmsg('Congratulations! url : {} Loopholes (no headers)'.format(item[0]))
-                    printmsg('request date: {}'.format(date))
+        if item[1]:
+            if len(item[1]) > 0:
+                for date in item[1]:
+                    if PostReq(item[0],date,word,header=item[2]):
+                        printmsg('Congratulations! url : {} Loopholes (yes headers)'.format(item[0]))
+                        printmsg('request date: {}'.format(date))
+                    if PostReq(item[0],date,word):
+                        printmsg('Congratulations! url : {} Loopholes (no headers)'.format(item[0]))
+                        printmsg('request date: {}'.format(date))
 
 if __name__ == "__main__":
     head()
     args = userinput()
     word = args.w
+    printmsg('Your different words：{}'.format(word))
     date = GetreadXML(args.f)
     Getcheck(date,word)
     date = PostreadXML(args.f)
